@@ -1,0 +1,58 @@
+
+
+footer {
+  
+
+    h3 {
+        color: tomato;
+        font-weight: 600;
+        padding: .5rem;
+        margin: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+
+    .foot-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+        
+
+        
+
+        a {
+            text-decoration: none;
+            color: wheat;
+            line-height: 1.4;
+            font-size: 1.6rem;
+            margin: 1rem;
+            transition: ease-in .5s;
+
+            
+
+            &:hover {
+                color: tomato;
+                transform: translateY(8px);
+            }
+
+        }
+    }
+
+    .social {
+        margin: 1rem;
+
+        a {
+            margin: .5rem;
+
+            &:hover {
+                opacity: 0.5;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+
+
+}

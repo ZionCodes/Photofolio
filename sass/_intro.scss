@@ -1,0 +1,63 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.intro {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    
+    .inside {
+
+        h2 {
+            color: white;
+            font-size: 3em;
+            font-weight: 600;
+            text-align: center;
+            position: relative;
+            animation: heading;
+            -webkit-animation: heading;
+            animation-duration: 3s;
+            -webkit-animation-duration: 3s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+
+            @keyframes heading {
+              0% {top: -100px}
+              100% {top: 0px}
+            }
+        }
+        p {
+            color: tomato;
+            font-size: 2em;
+            font-weight: 800;
+            text-align: center;
+            
+            width: 16ch;
+            animation: typing 4s steps(16), blink 0.5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            
+        }
+    }
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
